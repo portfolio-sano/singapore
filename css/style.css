@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap');
+
+
+/*共通部分
+----------------------------------- */
+html {
+  max-width: 100%;
+  font-family: "M PLUS 1p", "游ゴシック", YuGothic, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* ヘッダー 
+---------------------------------- */
+#header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  height: 100px;
+  box-shadow: 1px 1px 4px;
+}
+
+.icon {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+#header h2 {
+  font-size: 26px;
+  margin-right: 50px;
+}
+.menu img { 
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 2px;
+}
+.menu {
+  font-size: 12px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  border-right: 1px solid rgb(16, 16, 112);
+}
+.menu a {
+  color: black;
+  display: block;
+  padding: 5px 25px;
+}
+.menu li{
+  border-left: 1px solid rgb(16, 16, 112);
+}
+.menu a:hover{
+  color: rgb(92, 89, 89);
+}
+
+/* スライド画像
+---------------------------------------*/
+.slider {
+  width:100%;
+}
+.img_box {
+  max-width: 100%;
+  overflow: hidden;
+}
+#slide-img{
+  width: 100%;
+  display: block;
+}
+.button {
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 4px;
+}
+#prev,
+#next {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#prev:hover,
+#next:hover {
+  background-color: #f0f0f0;
+}
+#page {
+  height: 28px;
+  line-height: 28px;
+  user-select: none;
+  color: #666;
+  font-size: 13px;
+  margin: 0 10px;
+}
+/* セクション
+---------------------------------------*/
+.section-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+/* タイトル
+---------------------------------------*/
+.title {
+  font-size: 48px;
+  background-color: rgb(44, 64, 163);
+  color: white;
+  text-align: center;
+  height: 150px;
+  padding: 40px 0 32px;
+}
+
+.title-logo {
+  width: 50px;
+  height: 50px;
+  filter: brightness(500%);
+}
+/* スポット
+---------------------------------------*/
+#spot .title {
+  margin-top: 150px;
+}
+#spot ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 40px 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.spotList {
+  background: rgb(44, 64, 163);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.spotList:hover {
+  transform: translateY(-4px);
+}
+.subtitle{
+  font-size: 24px;
+}
+.spotList .img-wrap {
+  overflow: hidden;
+}
+.spotList .img-wrap img {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.spotList:hover .img-wrap img {
+  transform: scale(1.08);
+  opacity: 0.88;
+}
+.spotList span {
+  display: block;
+  padding: 14px 12px;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 0.02em;
+}
+/* 食べ物
+---------------------------------------*/
+#eat {
+  background: rgb(44, 64, 163);
+  padding-bottom: 40px;
+}
+#eat ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 40px 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.eatlist {
+  border: 1px solid white;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  background: rgb(44, 64, 163);
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.eatlist:hover {
+  background-color: rgba(255, 255, 255, 0.342);
+  transform: translateY(-4px);
+}
+.eatlist span {
+  display: block;
+  padding: 14px 12px;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
+/* 風景
+---------------------------------------*/
+
+#land ul {
+  display: grid;
+  list-style: none;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.landlist {
+  overflow: hidden;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+  color: #222;
+  font-size: 15px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.landlist:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.landlist .img-wrap {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+.landlist .img-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+.landlist:hover .img-wrap img {
+  transform: scale(1.08);
+  opacity: 0.88;
+}
+.landlist span {
+  display: block;
+  padding: 14px 12px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #222;
+  letter-spacing: 0.02em;
+}
+
+/* 基本情報
+---------------------------------------*/
+#info {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.infoList {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  text-align: left;
+}
+.info ul {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  font-size: 24px;
+  align-items: flex-start;
+}
+.infoList hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0;
+}
+.list-left {
+  font-weight: 700;
+  min-width: 120px;
+  color: rgb(44, 64, 163);
+  font-size: 15px;
+}
+.list-right {
+  color: #333;
+  line-height: 1.7;
+  flex: 1;
+}
+/*フッター
+---------------------------------------*/
+#footer {
+  background-color: rgb(54, 55, 58);
+  padding: 30px;
+  padding-top: 200px;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.footerList ul {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+.footerList a {
+  color: #ccc;
+  transition: color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.footerList a:hover {
+  color: white;
+}
+.footer-logo {
+  width: 20px;
+  height: 20px;
+  filter: brightness(500%);
+}
+#footer small {
+  font-size: 12px;
+  color: #888;
+}
+/*レスポンシブ
+---------------------------------------*/
+@media (max-width: 600px) {
+  #header {
+    padding-left: 16px;
+    justify-content: space-between;
+    padding-right: 16px;
+  }
+  #header h2 {
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .menu {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+    padding: 24px 0 20px;
+  }
+  .title-logo {
+    width: 28px;
+    height: 28px;
+  }
+  .subtitle {
+    font-size: 11px;
+  }
+
+  #spot ul {
+    flex-direction: column;
+    padding: 20px 16px 0;
+    gap: 16px;
+  }
+  .spotList {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #eat ul {
+    flex-direction: column;
+    padding: 20px 16px 0;
+    gap: 16px;
+  }
+  .eatlist {
+    width: 100%;
+  }
+
+  #land ul {
+    grid-template-columns: 1fr;
+    padding: 20px 16px 0;
+  }
+
+  .infoList {
+    padding: 0 16px;
+  }
+  .infoList li {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    padding: 14px 0;
+  }
+  .list-left {
+    min-width: unset;
+  }
+
+  .footerList ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  #footer {
+    padding: 40px 16px 30px;
+  }
+}
