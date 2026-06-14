@@ -28,6 +28,9 @@ ul {
   padding: 0;
   list-style: none;
 }
+section {
+  padding-top: 30px;
+}
 /* ヘッダー 
 ---------------------------------- */
 #header {
