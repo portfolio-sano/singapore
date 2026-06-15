@@ -369,20 +369,18 @@ section {
 }
 /*レスポンシブ
 ---------------------------------------*/
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   #header {
     padding-left: 16px;
     justify-content: space-between;
-    padding-right: 16px;
   }
   #header h2 {
     font-size: 18px;
-    margin-right: 0;
   }
   .menu {
-    display: none;
+    font-size:8px;
+    padding-right: 10px;
   }
-
   .title {
     font-size: 24px;
     padding: 24px 0 20px;
@@ -439,4 +437,7 @@ section {
   #footer {
     padding: 40px 16px 30px;
   }
+  section {
+  padding-top: 100px;
+}
 }
