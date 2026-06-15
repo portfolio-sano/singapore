@@ -11,26 +11,32 @@ html {
   margin: 0;
   padding: 0;
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
   max-width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 60px;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 section {
   padding-top: 30px;
 }
+
 /* ヘッダー 
 ---------------------------------- */
 #header {
@@ -52,16 +58,19 @@ section {
   height: auto;
   margin-right: 10px;
 }
+
 #header h2 {
   font-size: 26px;
   margin-right: 50px;
 }
-.menu img { 
+
+.menu img {
   width: 30px;
   height: 30px;
   display: block;
   margin: 0 auto 2px;
 }
+
 .menu {
   font-size: 12px;
   display: flex;
@@ -71,31 +80,37 @@ section {
   margin-top: 8px;
   border-right: 1px solid rgb(16, 16, 112);
 }
+
 .menu a {
   color: black;
   display: block;
   padding: 5px 25px;
 }
-.menu li{
+
+.menu li {
   border-left: 1px solid rgb(16, 16, 112);
 }
-.menu a:hover{
+
+.menu a:hover {
   color: rgb(92, 89, 89);
 }
 
 /* スライド画像
 ---------------------------------------*/
 .slider {
-  width:100%;
+  width: 100%;
 }
+
 .img_box {
   max-width: 100%;
   overflow: hidden;
 }
-#slide-img{
+
+#slide-img {
   width: 100%;
   display: block;
 }
+
 .button {
   margin: 0 auto;
   background-color: white;
@@ -105,6 +120,7 @@ section {
   padding: 10px 0;
   gap: 4px;
 }
+
 #prev,
 #next {
   width: 28px;
@@ -119,10 +135,12 @@ section {
   cursor: pointer;
   transition: background 0.2s;
 }
+
 #prev:hover,
 #next:hover {
   background-color: #f0f0f0;
 }
+
 #page {
   height: 28px;
   line-height: 28px;
@@ -131,6 +149,7 @@ section {
   font-size: 13px;
   margin: 0 10px;
 }
+
 /* セクション
 ---------------------------------------*/
 .section-wrap {
@@ -138,6 +157,7 @@ section {
   margin: 0 auto;
   padding: 0 40px;
 }
+
 /* タイトル
 ---------------------------------------*/
 .title {
@@ -154,11 +174,13 @@ section {
   height: 50px;
   filter: brightness(500%);
 }
+
 /* スポット
 ---------------------------------------*/
 #spot .title {
   margin-top: 150px;
 }
+
 #spot ul {
   display: flex;
   gap: 20px;
@@ -167,6 +189,7 @@ section {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .spotList {
   background: rgb(44, 64, 163);
   text-align: center;
@@ -177,27 +200,33 @@ section {
   overflow: hidden;
   flex: 1;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 .spotList:hover {
   transform: translateY(-4px);
 }
-.subtitle{
+
+.subtitle {
   font-size: 24px;
 }
+
 .spotList .img-wrap {
   overflow: hidden;
 }
+
 .spotList .img-wrap img {
   display: block;
   width: 100%;
   transition: transform 0.3s ease;
 }
+
 .spotList:hover .img-wrap img {
   transform: scale(1.08);
   opacity: 0.88;
 }
+
 .spotList span {
   display: block;
   padding: 14px 12px;
@@ -206,12 +235,14 @@ section {
   color: white;
   letter-spacing: 0.02em;
 }
+
 /* 食べ物
 ---------------------------------------*/
 #eat {
   background: rgb(44, 64, 163);
   padding-bottom: 40px;
 }
+
 #eat ul {
   display: flex;
   list-style: none;
@@ -220,6 +251,7 @@ section {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .eatlist {
   border: 1px solid white;
   flex: 1;
@@ -232,10 +264,12 @@ section {
   font-size: 24px;
   transition: background 0.25s ease, transform 0.25s ease;
 }
+
 .eatlist:hover {
   background-color: rgba(255, 255, 255, 0.342);
   transform: translateY(-4px);
 }
+
 .eatlist span {
   display: block;
   padding: 14px 12px;
@@ -243,6 +277,7 @@ section {
   font-size: 24px;
   letter-spacing: 0.02em;
 }
+
 /* 風景
 ---------------------------------------*/
 
@@ -255,6 +290,7 @@ section {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .landlist {
   overflow: hidden;
   border-radius: 10px;
@@ -262,17 +298,20 @@ section {
   text-align: center;
   color: #222;
   font-size: 15px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 .landlist:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
+
 .landlist .img-wrap {
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
+
 .landlist .img-wrap img {
   display: block;
   width: 100%;
@@ -280,10 +319,12 @@ section {
   object-fit: cover;
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
+
 .landlist:hover .img-wrap img {
   transform: scale(1.08);
   opacity: 0.88;
 }
+
 .landlist span {
   display: block;
   padding: 14px 12px;
@@ -299,12 +340,14 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .infoList {
   max-width: 1100px;
   margin: 40px auto 0;
   padding: 0 20px;
   text-align: left;
 }
+
 .info ul {
   display: flex;
   gap: 20px;
@@ -312,22 +355,26 @@ section {
   font-size: 24px;
   align-items: flex-start;
 }
+
 .infoList hr {
   border: none;
   border-top: 1px solid #e0e0e0;
   margin: 0;
 }
+
 .list-left {
   font-weight: 700;
   min-width: 120px;
   color: rgb(44, 64, 163);
   font-size: 15px;
 }
+
 .list-right {
   color: #333;
   line-height: 1.7;
   flex: 1;
 }
+
 /*フッター
 ---------------------------------------*/
 #footer {
@@ -347,6 +394,7 @@ section {
   gap: 100px;
   margin-bottom: 50px;
 }
+
 .footerList a {
   color: #ccc;
   transition: color 0.2s;
@@ -355,40 +403,63 @@ section {
   align-items: center;
   gap: 4px;
 }
+
 .footerList a:hover {
   color: white;
 }
+
 .footer-logo {
   width: 20px;
   height: 20px;
   filter: brightness(500%);
 }
+
 #footer small {
   font-size: 12px;
   color: #888;
 }
+
 /*レスポンシブ
 ---------------------------------------*/
 @media (max-width: 720px) {
   #header {
     padding-left: 16px;
     justify-content: space-between;
-  }
-  #header h2 {
-    font-size: 18px;
-  }
-  .menu {
-    font-size:8px;
     padding-right: 10px;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
+
+  #header h2 {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+
+  .menu {
+    font-size: 10px;
+    padding-right: 0;
+  }
+
+  .menu a {
+    padding: 4px 12px;
+  }
+
+  .menu img {
+    width: 22px;
+    height: 22px;
+  }
+
   .title {
     font-size: 24px;
     padding: 24px 0 20px;
   }
+
   .title-logo {
     width: 28px;
     height: 28px;
   }
+
   .subtitle {
     font-size: 11px;
   }
@@ -398,15 +469,18 @@ section {
     padding: 20px 16px 0;
     gap: 16px;
   }
+
   .spotList {
     width: 100%;
     margin-bottom: 0;
   }
+
   #eat ul {
     flex-direction: column;
     padding: 20px 16px 0;
     gap: 16px;
   }
+
   .eatlist {
     width: 100%;
   }
@@ -419,12 +493,14 @@ section {
   .infoList {
     padding: 0 16px;
   }
+
   .infoList li {
     flex-direction: column;
     gap: 6px;
     font-size: 14px;
     padding: 14px 0;
   }
+
   .list-left {
     min-width: unset;
   }
@@ -434,10 +510,12 @@ section {
     gap: 20px;
     align-items: center;
   }
+
   #footer {
     padding: 40px 16px 30px;
   }
+
   section {
-  padding-top: 100px;
-}
+    padding-top: 100px;
+  }
 }
